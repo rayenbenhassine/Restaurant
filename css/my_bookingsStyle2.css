@@ -1,0 +1,169 @@
+*
+{
+	padding: 0px;
+	margin:0px;
+    font-family:Bahnschrift Light, sans-serif;
+    box-sizing: border-box;
+
+}
+/*menu de nav*/
+#header-menu
+{
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+}
+nav
+{
+	border-bottom-style: solid;
+	border-bottom-width: 1px; 
+	background-color: white;
+
+}
+
+#ul-nav-menu
+{
+	margin: 0px auto;
+	width: 86%;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav li
+{
+	display: inline-block;
+}
+
+
+.nav-menu-center li a, .nav-menu-right li a
+{
+	padding:10px;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	border-radius: 7px;
+
+}
+#loginbtn, #homebtn
+{
+	background-color: #d65106;
+	color: white;
+}
+
+
+.nav-menu-center li a:not(.liens_user):hover, .nav-menu-right li a:not(.liens_user):hover
+{
+	color:white;
+	background-color: #d65106;
+	transition: 0.4s;
+}
+#dropdown
+{
+	position: relative;
+
+}
+#menu-vertical
+{
+	position: absolute;
+	display: none;
+	border:solid;
+	width:150px;
+	background: white;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+#dropdown:hover #menu-vertical
+{
+	display: block;
+
+}
+#menu-vertical li
+{
+	padding: 8px;
+}
+#menu-vertical li a:hover
+{
+	color:#d65106;
+	text-decoration: underline;
+
+}
+.liens_user
+{
+	color: black;
+	font-weight: bold;
+	text-transform: capitalize;
+	
+}
+.img
+{
+	background-image: url("../images/menu-img.jpg");
+	background-size: cover;
+	height: 400px;
+	padding-top: 150px;
+}
+.discover
+{
+	font-family: Tangerine;
+	font-size: 70px;
+	color: #FFA500;
+
+}
+
+.section-title
+{
+	font-family: open Sans;
+	font-size: 40px;
+	color: white;
+}
+
+table
+{
+	width: 70%;
+	margin: 50px auto;
+}
+td
+{
+	text-align: center;
+	padding: 20px;
+	border-bottom: solid;
+	border-width: 1px;
+}
+tr:nth-child(2n+1):not(:first-child)
+{
+	background-color:#fddece;
+
+}
+tr:nth-child(2n)
+{
+	background-color:#feefe7;
+}
+th
+{
+	border-bottom: solid;
+	padding: 20px 0px;
+	border-width: 1px;
+	background-color: #d65106;
+	color: white;
+}
+footer
+{
+	height:370px;
+	background-color: #272632;
+}
+
+
+footer ul
+{
+	list-style: none;
+}
+
+footer ul li
+{
+	display: inline-block;
+	padding: 100px 10px;
+}

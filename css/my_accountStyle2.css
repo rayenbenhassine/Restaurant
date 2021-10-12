@@ -1,0 +1,227 @@
+/*Signin.html*/
+*
+{
+	padding: 0px;
+	margin:0px;
+    font-family: 'Rubik', sans-serif;	
+    box-sizing: border-box;
+
+}
+
+/*menu de nav*/
+#header-menu
+{
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+}
+nav
+{
+	border-bottom-style: solid;
+	border-bottom-width: 1px; 
+	background-color: white;
+
+}
+
+#ul-nav-menu
+{
+	margin: 0px auto;
+	width: 86%;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav li
+{
+	display: inline-block;
+}
+
+
+.nav-menu-center li a, .nav-menu-right li a
+{
+	padding:10px;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	border-radius: 7px;
+
+}
+#loginbtn, #homebtn
+{
+	background-color: #d65106;
+	color: white;
+}
+
+.nav-menu-center li a:not(.liens_user):hover, .nav-menu-right li a:not(.liens_user):hover
+{
+	color:white;
+	background-color: #d65106;
+	transition: 0.4s;
+}
+#dropdown
+{
+	position: relative;
+
+}
+#menu-vertical
+{
+	position: absolute;
+	display: none;
+	border:solid;
+	width:150px;
+	background: white;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+#dropdown:hover #menu-vertical
+{
+	display: block;
+
+}
+#menu-vertical li
+{
+	padding: 8px;
+}
+#menu-vertical li a:hover
+{
+	color:#d65106;
+	text-decoration: underline;
+
+}
+.liens_user
+{
+	color: black;
+	font-weight: bold;
+	text-transform: capitalize;
+	
+}
+
+section
+{
+	background-image: url("../images/signin-bg.jpg");
+	background-size: cover;
+	height: 900px;
+	padding-top: 10px;
+
+}
+.signin-container
+{
+	width:25%;
+	float: right;
+	margin-right: 150px;
+	background-color: rgba(0,0,0,0.4);
+	padding: 25px;
+	padding-top: 10px;
+	border-top-style: solid;
+	border-top-color: #d65106;
+	border-top-width: 10px;
+	margin-top: 110px; 
+}
+
+input
+{
+	width: 100%;
+	background-color: none;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+
+input[type=text], input[type=password],input[type=email],input[type=adress],input[type=login],input[type=tel],input[type=date]
+{
+	height: 35px;
+	border-radius:5px;
+	border-style: solid;
+	border-width: 1px;
+	background-color: rgba(0,0,0,0);
+	border-color: white;
+	color: white;
+	padding: 10px;
+
+}
+
+
+.image-header
+{
+	background-color: rgba(255,255,255,0.9); border-radius: 10px; width: 15%; margin:0px auto; padding: 10px 0px;
+}
+
+input[type=submit]
+{
+	height: 35px;
+	background-color: #d65106;
+	border-radius:5px;
+	border:none;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+}
+h1
+{
+	float: left;
+	font-family: Kaushan Script;
+	font-size: 50px;
+	color: white;
+	margin-top: 300px;
+	margin-left: 150px;
+	font-size: 70px;
+}
+h2
+{
+	color: white;
+	font-family: Tangerine;
+	text-align: center;
+	font-size: 45px;
+	margin: 10px;
+
+}
+label
+{
+	color: white;
+}
+
+.signin-container a
+{
+	display: flex;
+	align-items: center;
+	height: 35px;
+	text-decoration: none;
+	background-color: white;
+	width: 100%;
+	margin: 0px auto;
+	justify-content: center;
+	margin-top: 20px;
+	background-color: #d65106;
+	border-radius: 5px;
+	color: white;
+	font-size: 16px;
+}
+
+.clearfix:after
+{
+	content:"";
+	display: table;
+	clear: both;
+}
+/*footer*/
+footer
+{
+	height:370px;
+	background-color: #272632;
+}
+
+
+footer ul
+{
+	list-style: none;
+}
+
+footer ul li
+{
+	display: inline-block;
+	padding: 100px 10px;
+}
